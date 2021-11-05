@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<style type="text/css">
+  #mainPopup {
+    padding: 30px;
+    min-height: 200px;
+    width: 350px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+
+  .card {
+    border: 2px black solid;
+  }
+</style>
+<script src="in.js"></script>
+<div id="mainPopup" class="bg-dark" style="border: 1px black solid">
+  <h1 id="title" class="text-light">Cookie Manager</h1>
+  <div id="content" class="d-flex justify-content-center flex-column">
+    <h5 id="url-heading" class="text-info">Cookies for</h5>
+    <button id="cookie-view" class="btn btn-success mt-3">View cookies</button>
+    <button id="cookie-delete" class="btn btn-danger">Delete cookies</button>
+    <!-- <pre id="view-content"></pre> -->
+    <div id="view-content" class="mt-4 text-success"></div>
+  </div>
+</div>
